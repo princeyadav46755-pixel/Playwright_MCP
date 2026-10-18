@@ -1,6 +1,6 @@
 
 # Playwright
-.env.qa*
+#.env.qa*
 node_modules/
 /test-results/
 /playwright-report/

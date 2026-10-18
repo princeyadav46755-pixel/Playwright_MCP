@@ -23,6 +23,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Print BASE_URL
+        run: echo "BASE_URL is $BASE_URL"
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 

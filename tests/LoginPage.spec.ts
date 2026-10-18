@@ -10,7 +10,7 @@ test('Sauce Demo Verify ',async({loginPage,page})=>{
     await loginPage.fillPassword(environment.password)
     await loginPage.loginButton();
      
-    await  page.pause();
+    
 })
 
 

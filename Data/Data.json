@@ -1,0 +1,37 @@
+[
+    {
+        
+        "username": "admin",
+        "password": "admin123",
+        "label": "Invalid user name password"
+    },
+    {
+        "username": "wronguser",
+        "password": "secret_sauce",
+        "label": "Invalid user name"
+    },
+    {
+        
+        "username": "standard_user",
+        "password": "wrong123",
+        "label": "Invalid password"
+    },
+    {
+        
+        "username": "",
+        "password": "admin123",
+        "label": "Blank Username"
+    },
+    {
+        
+        "username": "admin",
+        "password": "",
+        "label": "Empty Password"
+    },
+    {
+        "testCase": "Valid Login",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "label": "success"
+    }
+]

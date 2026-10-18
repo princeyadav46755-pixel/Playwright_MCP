@@ -15,10 +15,13 @@ export default defineConfig({
   reporter: 'html',
  
   use: {
+
+    baseURL:environment.baseUrl,
+
      headless:!!process.env.CI,
      
-    
-     baseURL:environment.baseUrl,
+     
+     
     
     trace: 'on-first-retry',
   },
@@ -29,15 +32,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
    
   ],

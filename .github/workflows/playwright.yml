@@ -23,8 +23,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Print BASE_URL
-        run: echo "BASE_URL is $BASE_URL"
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
@@ -32,9 +30,9 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test
         env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          USER_NAME: ${{ secrets.USER_NAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          BASE_URL: ${{ vars.BASE_URL }}
+          USER_NAME: ${{ vars.USER_NAME }}
+          PASSWORD: ${{ vars.PASSWORD }}
 
       - name: Upload Playwright Report
         if: always()
